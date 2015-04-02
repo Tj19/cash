@@ -1,0 +1,43 @@
+<HTML>
+<head>
+<title>Q1</title>
+<style type="text/css">
+
+	table{border-collapse:collapse;width:25%;}
+
+	th{background:#06F;text-align:center;}	
+
+
+	.tr1{background:#09F;}
+	.tr2{background:#3CF;}
+	
+	</style>
+</head>
+
+<body><center>
+<table cellpadding="12px" cell-spacing="5px" >
+<th>Item Name</th>
+<th>Price</th>
+    <tr class="tr1">
+	<td>Laptop</td>
+        <td align="right">22,000</td>
+    </tr>
+    
+    <tr class="tr2">
+	<td>Monitor</td>
+        <td align="right">10,200</td>
+    </tr>
+    
+    <tr class="tr1">
+	<td>Printer</td>
+        <td align="right">7,100</td>
+    </tr>
+    
+    <tr class="tr2">
+	<td></td>
+        <td></td>
+    </tr>
+</table>
+</center>
+</body>
+</html>

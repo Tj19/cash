@@ -1,0 +1,41 @@
+<!doctype html>
+<head>
+<title>
+HTML_EX2
+</title>
+<style type="text/css">
+body
+{
+	font-size:14pt;
+	font-weight: bold;
+	font-family: verdana 
+}
+</style>
+</head>
+<body>
+<ul type="disc">
+<li>Comedies
+  <ul type="circle">
+  <li><a href="file1.html">As you Like it</a>
+  <li>All's Well That Ends Well
+  <li>A Midsummer Night's Dream
+  <li>Twelfth Night
+  </ul>
+<li>Tragedies
+  <ul type="circle">
+  <li><a href="file2.html">Hamlet</a>
+  <li>Macbeth
+  <li>Romeo and Juliet
+  </ul>
+<li>Histories 
+  <ul type="circle">
+  <li>Henry IV(<a href="file3.html">email</a>)
+  <ul type="square">
+  <li>Part I
+  <li>Part II
+  </ul>
+  <li><a href="henry.html">Henry V</a>
+  <li>Richard II
+</ul>
+</tbody>
+</html>
