@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+Q5
+</title>
+<style type="text/css">
+
+
+.yellow1{
+background:yellow;
+z-index:100;
+height:90px;
+width:90px;
+position :relative
+}
+.blue1{
+background:blue;
+z-index:150;
+height:90px;
+width:90px;
+position:relative;
+margin-left:40px;
+margin-top:-40px;
+opacity:0.6;
+}
+p{color:white;}
+</style>
+</head>
+<body>
+<div class="yellow1"><p>TEXT</p>
+</div>
+<div class="blue1">
+</div>
+</body>
+</html>

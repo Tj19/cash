@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>
+Q5
+</title>
+<style type="text/css">
+p
+{
+	font-size:24pt;
+	font-weight: bold;
+	color:white;
+	
+}
+</style>
+</head>
+<body>
+<div style="background-color:blue;opacity: 0.6;position:absolute;left:180;top:220;width:300;height:300;z-index:101">
+<p align="center">TEXT</p>
+</div>
+<div style="background-color:yellow;position:relative;left:10;width:300;height:300;z-index:100">
+</div>
+</body>
+</html>
