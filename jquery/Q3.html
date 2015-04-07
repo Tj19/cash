@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="jquery1.js">
+</script>
+</head> 
+<body>
+<input type="button" id="b1" value="Click" height="50" width="20"/>
+<p>hi</p>
+
+<script>
+$(document).ready(function(){
+		 $('#b1').click(function(){
+ 			if($('p').text()=="hello")
+ 				$('p').text("hi")
+
+			else if($('p').text()=="hi")
+				 $('p').text("hello")
+	
+})
+})
+</script>
+</body>
+</html>
