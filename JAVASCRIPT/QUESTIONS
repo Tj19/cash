@@ -1,0 +1,41 @@
+
+
+	EXERCISE 1
+
+Q1.	In Application.js Make a function which returns the current date/time.
+Q2.	Also make another function which returns the Date passed in a defined format.(“dd Month, yyyy HH:MM:ss”);
+
+
+
+        EXERCISE 2
+
+Q1.	Make A Function which takes the “ID”, of the element and “HTML” as the parameter, And replaces the content of the element by the HTML 		supplied.
+
+Q2.	Make a “div” on the Html Page with id=”timeDisp”. Write a function which uses all the functions developed in previous exercises to 		display current formatted time in the “div” created above. 
+
+
+	EXERCISE 3
+
+Q1.	Create an Object named Clock and encapsulate all functions in it. 
+
+
+	EXERCISE 4
+
+Q1.	Make an Interval which calls the method updateTime every one second.
+Q2.	Make a button which can stop this interval.
+
+
+
+	FINAL EXERCISE
+
+1) Prompt for amount, interest rate and no. of years and calculate simple interest.
+2) is palindrome string
+3) Area of circle
+
+Exercises Using Form
+4) On click of a button ask for the name of user and display it inside the text box
+5) Copy text of one text field to another on change of text in first text box
+6) Allow submission of form only if the user has entered his name(not empty) and age is greater than or equals to 18 
+7) Change color of the div when mouse is moved over it and restore the color when mouse moves out of it
+8) Externalize JavaScript file
+
