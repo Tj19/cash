@@ -1,0 +1,1 @@
+new File("/home/tj/haha").eachFile({file-> new File("${file}").eachLine({line-> new File("file1.txt").append(line)})})
