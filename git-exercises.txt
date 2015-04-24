@@ -1,0 +1,168 @@
+- Initialize a Git Repository
+
+	mkdir git
+	git init
+
+- Add files to the repository
+	
+	touch file1 file2
+	git add file1
+	git add file2
+
+
+- Unstage 1 file
+
+	git rm --cached file1
+
+- Commit the files
+
+	git commit -m "first commit"
+ 
+
+- Add a remote
+
+	git remote add yo https://github.com/Tj19/rev.git
+	git remote -v
+	
+- Undo changes to a particular file
+
+	git reset HEAD file1
+
+- Push changes to Github
+
+	git push yo master
+
+- Clone the repository
+
+	git clone https://github.com/Tj19/cash.git
+
+- Add changes to one of the copies and pull the changes in the other.
+
+
+
+tj@tj-HP-15-Notebook-PC:~/1git$ git pull yo master
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/Tj19/rev
+ * branch            master     -> FETCH_HEAD
+   d7b2bf3..7e70df6  master     -> yo/master
+Auto-merging file1
+Merge made by the 'recursive' strategy.
+ file1 | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+tj@tj-HP-15-Notebook-PC:
+
+
+- Add changes to both repos, try to push from both without taking a pull.
+
+
+tj@tj-HP-15-Notebook-PC:~/1git$ git push yo master
+Username for 'https://github.com': Tj19
+Password for 'https://Tj19@github.com': 
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.44 KiB | 0 bytes/s, done.
+Total 10 (delta 2), reused 0 (delta 0)
+To https://github.com/Tj19/rev.git
+   1c796d4..7589938  master -> master
+
+
+
+
+- Check differences between a file and its staged version
+
+
+tj@tj-HP-15-Notebook-PC:~/1git$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   fil2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	f.txt~
+	file1~
+	g.txt~
+
+tj@tj-HP-15-Notebook-PC:~/1git$ 
+ 
+
+
+- Ignore a few files to be checked in
+
+
+- Create a new branch. Diverge them with commits & Edit the same file at the same line on both branches and commit
+
+
+
+tj@tj-HP-15-Notebook-PC:~/awesome$ touch file1.txt
+tj@tj-HP-15-Notebook-PC:~/awesome$ vi file1.txt
+tj@tj-HP-15-Notebook-PC:~/awesome$ git add file1.txt
+
+
+tj@tj-HP-15-Notebook-PC:~/awesome$ git commit -am "k"
+[master (root-commit) d5e64c2] k
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+tj@tj-HP-15-Notebook-PC:~/awesome$ git branch one
+tj@tj-HP-15-Notebook-PC:~/awesome$ git checkout one
+Switched to branch 'one'
+tj@tj-HP-15-Notebook-PC:~/awesome$ vi file1.txt
+tj@tj-HP-15-Notebook-PC:~/awesome$ vi file1.txt
+tj@tj-HP-15-Notebook-PC:~/awesome$ git add file1.txt
+tj@tj-HP-15-Notebook-PC:~/awesome$ git commit -am "m"
+[one 08cc287] m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+tj@tj-HP-15-Notebook-PC:~/awesome$ cat file1.txt
+iiiih
+tj@tj-HP-15-Notebook-PC:~/awesome$ git checkout master
+Switched to branch 'master'
+tj@tj-HP-15-Notebook-PC:~/awesome$ cat file1.txt
+hellO
+tj@tj-HP-15-Notebook-PC:~/awesome$
+
+
+
+
+- Try merging and resolve merge conflicts
+
+
+tj@tj-HP-15-Notebook-PC:~/awesome$ git merge one
+Auto-merging file1.txt
+CONFLICT (content): Merge conflict in file1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+tj@tj-HP-15-Notebook-PC:~/awesome$ vi file1.txt
+tj@tj-HP-15-Notebook-PC:~/awesome$ git merge one
+Auto-merging file1.txt
+Merge made by the 'recursive' strategy.
+ file1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+
+  
+	
+
+- Stash the changes and pop them
+
+
+tj@tj-HP-15-Notebook-PC:~/awe$ git add file1.txt
+tj@tj-HP-15-Notebook-PC:~/awe$ git stash
+Saved working directory and index state WIP on master: b791179 jsodjfsou
+HEAD is now at b791179 jsodjfsou
+tj@tj-HP-15-Notebook-PC:~/awe$ git status
+On branch master
+nothing to commit, working directory clean
+tj@tj-HP-15-Notebook-PC:~/awe$ git stash pop
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   file1.txt
+
+Dropped refs/stash@{0} (8586f1981e7186732d1ca30301d74a2b1ebec5e6)
+tj@tj-HP-15-Notebook-PC:~/awe$ 
