@@ -1,0 +1,36 @@
+Q4.
+
+Groovy Truth: if('test') { println "test evaluated to true inside if" } 
+
+try replacing test with various objects and observe its behaviour. 
+
+a) "Test" 
+ 	
+	"test evaluated to true inside if"   //gets printed asits a string
+
+b)'null' 
+
+	"test evaluated to true inside if"  //gets printed as its a string
+
+c) null 
+
+	//nothing will be printed as its null
+
+d) 100 
+
+	"test evaluated to true inside if"   //gets printed as +integer
+
+e) 0 
+
+	//nothing will be printed as its null as its 0
+
+
+f) empty list 
+
+	//nothing will be printed as its empty
+
+
+g) list with all vaues as null List list = new ArrayList() 
+
+
+	//nothing will be printed as its empty
