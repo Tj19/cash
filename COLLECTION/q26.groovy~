@@ -1,9 +1,0 @@
-String str= "http://www.google.com?name=tarun&age=23&hobby=soccer"
-def var=str.tokenize("?")
-def key
-var.each{ 
- key=it.split("&")
-}
-key.each{ 
- println it
-}
