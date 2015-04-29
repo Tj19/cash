@@ -1,4 +1,0 @@
-List l=[1,2,3,4]
-println l.first()
-println l.getAt(1)
-print l.last()
