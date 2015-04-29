@@ -1,0 +1,43 @@
+Exercises: 
+
+-Create a set from a list containing duplicate elements. What do you observe? How can you achieve the same result without converting a list to a set? 
+-Get first, second and last element of Range. 
+-Create a new map consisting of 10 of your friend's name's as keys and their ages as value.
+-Iterate over the previous map in as many ways as possible 
+-Create a new map by adding two existing maps 
+-Try the following code on a map: 
+  println map.class 
+  println map.getClass() 
+  What do you observe? 
+
+-Consider the following map: 
+	Map m = ['1' : 2, '2' : 3, '3' : 4, '2':5] 
+	Is this a valid construction? What is the value of m['2']? 
+	Find if a map contains a particular key. 
+
+Consider the following map: 
+Map m = [
+    	 ‘Computing’ : [‘Computing’ : 600, ‘Information Systems’ : 300], 
+         ‘Engineering’ : [‘Civil’ : 200, ‘Mechanical’ : 100], 
+         ‘Management’ : [‘Management’ : 800] 
+       ] 
+
+a) How many university departments are there? 
+b) How many programs are delivered by the Computing department? 
+c) How many students are enrolled in the Civil Engineering program? 
+
+-Consider a class named "Employee" which has the following properties: 
+1) Name 
+2) Age 
+3) DepartmentName 
+4) EmployeeNumber 
+5) Salary 
+
+-Let's say that there's a list of 50 employees available. Perform the following operations on the list of employees: 
+a) Group the employees on the basis of the bracket in which their salary falls. The ranges are 0-5000, 5001 and 10000, and so on. 
+b) Get a count of the number of employees in each department 
+c) Get the list of employees whose age is between 18 and 35 
+d) Group the employees according to the alphabet with which their first name starts and display the number of employees in each group whose age is greater than 20 
+e) Group the employees according to their department. 
+
+-Write a method which returns the value of passed key from a search string of the form  "http://www.google.com?name=johny&age=20&hobby=cricket"

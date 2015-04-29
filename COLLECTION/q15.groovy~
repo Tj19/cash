@@ -1,0 +1,21 @@
+class Stack
+{
+  Object[] o=[1,2,3,4,5];
+   Object pop()
+  {
+     println 'the last element is = '+o.last();
+  }
+  /*void push(Object x)
+  {
+    println x.();
+    o.dropRight(1);
+  }*/
+   void top()
+  {
+    println 'the top element is = '+o.first();
+  }
+}
+def obj=new Stack();
+println obj.o
+println obj.pop()
+println obj.top()

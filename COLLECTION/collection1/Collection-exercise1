@@ -1,0 +1,66 @@
+Collections - I
+
+1. Initialize an empty list and give the output of the following code: 
+l[11] = "myelement" 
+println l[11] 
+println l.get(5) 
+println l 
+
+2. Initialize a list and find all elements which are divisible by 5. 
+
+3. Given two lists [11, 12, 13, 14] and [13, 14, 15], how would we obtain the list of items from the first that are not in the second? 
+
+4. Find whether two lists have a common element or not. 
+
+5. Remove all records from a list whose index is odd.
+
+6. Consider the following list: 
+[1, 2, 3, "element1", 0.3, [2, 4, 6], 0..10 ] 
+
+Print the class name of each element. What's the output of the following statement? 
+list.get(6).get(9) 
+
+7. Sort the given list in descending order having distinct elements: 
+[14,12, 11,10, 16, 15,12, 10, 99, 90, 14, 16, 35] 
+
+8. Consider a class Employee with following details 
+* Name 
+* Age 
+* Salary 
+
+Create a list consisting of 10 Employee objects. 
+(a). Get a list of employees who earn less than 5000 
+(b). Get the name of the youngest employee and oldest employee 
+(c). Get the employee with maximum salary 
+(d). Get the list of names of all the employees 
+
+9. Consider the following piece of code: 
+String s = "this string needs to be split" 
+println s.tokenize(" ") 
+println s.tokenize() 
+
+Compare this with the following code: 
+String s = "this string needs to be split" 
+println s.split(" ") 
+println s.split(/\s/) (Try Same Parameter with tokenize) 
+
+Also try the following exercise: 
+String s = "are.you.trying.to.split.me.sir?" 
+s.tokenize(".") 
+s.split(".") 
+
+10. Get first and last element of List. 
+
+11. Print the table of a given number : 2 and 12 
+
+12. We have a sorted list of alphabets a-z, print all alphabets appearing after j 
+
+13. Find the number of occurrences of a character in a string 
+
+14. Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print "FizzBuzz".
+ 
+15. Consider a class named "Stack" that holds a list of objects and has the following operations associated: 
+1) POP - Pops the last element off the stack 
+2) PUSH - Pushes an element on top of the stack 
+3) TOP - Returns the element at the top of the list 
+Implement the aforesaid class 
