@@ -11,4 +11,3 @@ print 'Buzz'+' '
 
 else print it+" "
 }
-
