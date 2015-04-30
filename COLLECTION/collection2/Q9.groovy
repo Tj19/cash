@@ -21,7 +21,7 @@ Map m1=l.groupBy({
      else
      return "above 10000"
 })
-println m1;
+m1.each{println it.key+it.value.name}
 
 println "Sol-(b)"
 Map m2=l.groupBy({it.dept})
@@ -36,16 +36,19 @@ if(it.age>18 && it.age<35)
 return "Adults"
 else
 return "Aged"})
-println m3
-
+m3.each{
+println  it.key + it.value.name
+}
 println "Sol-(d)"
 Map m=l.groupBy{it.name[0]};
-println m
+println m*.value.name
 m.each{
 print "Name Start with:${it.key} and number of Employees with Age >20 are:"
-println it.value.countBy({it2->it2.age>20}).get(true)
+println it.value.countBy({i->i.age>20}).get(true)
 }
 
 println "Sol-(e)"
 Map m5=l.groupBy({it.dept})
-println m5
+m5.each{ 
+println "\t"+it.key+" "+it.value.size()+it.value.name;
+}
